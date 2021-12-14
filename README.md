@@ -44,6 +44,19 @@ Le poste devait aussi être configuré pour :
 ## Prérequis
 
 La machine sur laquelle j'ai réalisé l'installation est un ordinateur portable possédant un système Windows 11 et un sytème Linux Ubuntu.
-Avant de commencer l'installation j'ai du créer une clé de boot pour qui servira à l'initier. Sur Windows j'ai téléchargé une image du système d'exploitation (fichier .iso) que j'ai trouvé sur le **[site français de Arch Linux](http://mir.archlinux.fr/iso/latest/)**, elle porte le nom "*archlinux-2021.12.01-x86_64.iso*". J'ai aussi téléchargé le logiciel Rufus et branché ma clé USB. Sur Rufus j'ai sélectionné le périphérique correspondant à ma clé USB, sélectionné l'image disque de Arch Linux et cliqué sur Démarrer. Une fois le statut affichant prêt, j'ai relancé mon ordinateur et suit tombé sur 
+Avant de commencer l'installation j'ai du créer une clé de boot pour qui servira à l'initier. Sur Windows j'ai téléchargé une image du système d'exploitation (fichier .iso) que j'ai trouvé sur le **[site français de Arch Linux](http://mir.archlinux.fr/iso/latest/)**, elle porte le nom "*archlinux-2021.12.01-x86_64.iso*". J'ai aussi téléchargé le logiciel Rufus et branché ma clé USB. Sur Rufus j'ai sélectionné le périphérique correspondant à ma clé USB, sélectionné l'image disque de Arch Linux et cliqué sur Démarrer, Rufus formate entièrement ma clé et place les fichiers du fichier .iso dessus.
+Une fois le statut affichant prêt, j'ai relancé mon ordinateur et suis tombé directement sur le menu d'installation de Arch Linux. En effet dans mon UEFI j'avais lors de mon installation Ubuntu en dual boot déjà désactivé le Secure Boot et le Fast Boot, j'avais aussi mis en premier périphérique à boot mon entrée USB et en deuxième périphérique mon grub installé sur mon disque dur (qui se lance par défaut quand il n'y a pas de clé de boot inséré).
+
+## Installation du système d'exploitation
+
+Dans le menu d'installation de Arch Linux, je sélectionne l'option:
+
+>Arch Linux install medium (x86_64, UEFI)
+
+Ensuite j'obtiens un terminal *archiso* où je suis connecté en *root*. La première chose que je fais pour me faciliter toutes les commandes est le changement de mes touches de QWERTY à AZERTY, pour cela j'entre la commande:
+
+>loakeys fr
+
+
 
 # Schéma d'architecture logicielle
