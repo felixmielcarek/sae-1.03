@@ -55,7 +55,7 @@ Dans le menu d'installation de Arch Linux, je sélectionne l'option:
 
 Ensuite j'obtiens un terminal *archiso* où je suis connecté en *root*. La première chose que je fais pour me faciliter toutes les commandes est le changement de mes touches de QWERTY à AZERTY, pour cela j'entre la commande:
 
->loakeys fr
+`# loadkeys fr`
 
 
 
