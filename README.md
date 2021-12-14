@@ -43,7 +43,7 @@ Le poste devait aussi être configuré pour :
 
 ## Prérequis
 
-Cette installation est réalisée dans une machine virtuelle, l'ordinateur est considéré comme possédant une carte mère configurée par un BIOS. Dans le cas d'un UEFI certaines étapes seraient à adapter.
-Pour réaliser l'installation il faut d'abord posséder une image du système (.iso) qui est disponible sur le **[site de Arch Linux](http://mir.archlinux.fr/iso/latest/)**. Une clé (ou un CD) d'installation bootable doit être créée à partir de cette image (cette étape n'est pas détaillée dans ce tutoriel) et inséré dans l'ordinateur avant le démarrage de la machine.
+La machine sur laquelle j'ai réalisé l'installation est un ordinateur portable possédant un système Windows 11 et un sytème Linux Ubuntu.
+Avant de commencer l'installation j'ai du créer une clé de boot pour qui servira à l'initier. Sur Windows j'ai téléchargé une image du système d'exploitation (fichier .iso) que j'ai trouvé sur le **[site français de Arch Linux](http://mir.archlinux.fr/iso/latest/)**, elle porte le nom "*archlinux-2021.12.01-x86_64.iso*". J'ai aussi téléchargé le logiciel Rufus et branché ma clé USB. Sur Rufus j'ai sélectionné le périphérique correspondant à ma clé USB, sélectionné l'image disque de Arch Linux et cliqué sur Démarrer. Une fois le statut affichant prêt, j'ai relancé mon ordinateur et suit tombé sur 
 
 # Schéma d'architecture logicielle
