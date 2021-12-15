@@ -65,4 +65,13 @@ Dans les paquets installés par pacstrap se trouve le programme pacman qui perme
 * grub qui me permettra de configurer mon grub déjà installer pour qu'il reconnaisse mon nouveau système
 * xorg qui me permettra d'utiliser un interface graphique
 
+Quand les paquets ont fini d'être téléchargés je tape la commande: genfstab -U /mnt >> /mnt/etc/fstab qui me permet !!!!!!!!!!!!!!!!!!!!!!!!.
+Ensuite la commande arch-chroot /mnt me permet d'entrer dans un environnement isolé, ce qui signifie que je ne peut pas accéder aux fichiers et aux commandes du système hôte. Cela reviens à être connecter en tant que root sur notre système.
+Pour configurer notre fuseau horaire je tape la commande suivante: ln -sf /usr/share/zoneinfo/Europe/Paris /etc/localtime.
+Pour configurer l'horloge de notre système je tape la commande suivante: hwclock --systohc.
+Ensuite il faut éditer le fichier locale.gen qui contient des paramètres régionaux. Pour cela je tape la commande vim /etc/locale.gen, une fois dans le fichier je recherche la ligne que je veux en tapant /fr_FR.UTF-8, je tape Entrée et je décommente la ligne sur laquelle je me trouve. La commande locale-gen permet de générer les paramètres du fichier que je viens d'éditer.
+
+Maintenant il faut donner un nom à notre système, pour cela je tape la commande vim /etc/hostname, j'écris ensuite dans le fichier le nom choisit: fm-arch-sae dans mon cas.
+Ensuite il faut créer un fichier de hosts, vim /etc/hosts.
+
 # Schéma d'architecture logicielle
