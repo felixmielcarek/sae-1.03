@@ -65,7 +65,7 @@ Dans les paquets installés par pacstrap se trouve le programme pacman qui perme
 * grub qui me permettra de configurer mon grub déjà installer pour qu'il reconnaisse mon nouveau système
 * xorg qui me permettra d'utiliser un interface graphique
 
-Quand les paquets ont fini d'être téléchargés je tape la commande: genfstab -U /mnt >> /mnt/etc/fstab qui me permet !!!!!!!!!!!!!!!!!!!!!!!!.
+Quand les paquets ont fini d'être téléchargés je tape la commande: genfstab -U /mnt >> /mnt/etc/fstab qui me permet d'ajouter mon système dans le fichier fstab qui contient les configurations de montage des systèmes de ma machine.
 Ensuite la commande arch-chroot /mnt me permet d'entrer dans un environnement isolé, ce qui signifie que je ne peut pas accéder aux fichiers et aux commandes du système hôte. Cela reviens à être connecter en tant que root sur notre système.
 Pour configurer notre fuseau horaire je tape la commande suivante: ln -sf /usr/share/zoneinfo/Europe/Paris /etc/localtime.
 Pour configurer l'horloge de notre système je tape la commande suivante: hwclock --systohc.
