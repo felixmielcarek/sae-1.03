@@ -24,6 +24,10 @@ Une fois le statut affichant prêt, j'ai relancé mon ordinateur et suis tombé 
 
 ## Installation du système d'exploitation
 
+
+!!!!!!!!!!!!!!!!!!!DETAILLER TOUT LES -options !!!!!!!!!!!!!!!!!!!
+
+
 Dans le menu d'installation de Arch Linux, je sélectionne l'option ```Arch Linux install medium (x86_64, UEFI)```.
 
 Ensuite j'obtiens un terminal *archiso* où je suis connecté en *root*. La première chose que je fais pour me faciliter toutes les commandes est le changement de mes touches de QWERTY à AZERTY, pour cela j'entre la commande ```loadkeys fr```.
@@ -72,6 +76,43 @@ Pour configurer l'horloge de notre système je tape la commande suivante: hwcloc
 Ensuite il faut éditer le fichier locale.gen qui contient des paramètres régionaux. Pour cela je tape la commande vim /etc/locale.gen, une fois dans le fichier je recherche la ligne que je veux en tapant /fr_FR.UTF-8, je tape Entrée et je décommente la ligne sur laquelle je me trouve. La commande locale-gen permet de générer les paramètres du fichier que je viens d'éditer.
 
 Maintenant il faut donner un nom à notre système, pour cela je tape la commande vim /etc/hostname, j'écris ensuite dans le fichier le nom choisit: fm-arch-sae dans mon cas.
-Ensuite il faut créer un fichier de hosts, vim /etc/hosts.
+Ensuite il faut créer un fichier de hosts à l'aide de la commande: vim /etc/hosts. Dans ce fichier il faut écrire les lignes suivantes:
+
+```
+127.0.0.1   localhost
+::1         localhost
+127.0.1.1   fm-arch-sae
+```
+
+Ce fichier permet au système d'associer des noms d'hôtes à des adresses IP lors de l'accès à un réseau. !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Maintenant je vais attribuer un mot de passe à l'utilisateur root, je tape la commande passwd et entre mon mot de passe (puis le confirme).
+Je vais maintenant créer mes utilisateurs normaux, d'abord felix, je tape la commande useradd -m felix, je lui attribue un mot de passe avec la commande passwd felix.
+Je répète ces 2 opérations pour créer "stagiaire".
+Je vais maintenant attribuer des groupes à mes utilisateurs pour qu'ils aient accès à certaines fonctions, pour "felix" je tape la commande **usermod -aG wheel,audio,video,optical,storage,lp felix** et pour stagiaire la même commande sans le wheel (je ne veux pas qu'il ait accès au commandes sudo).
+Les groupes précédents correspondent à:
+* wheel: ce groupe est utilisé pour donner à l'utilisateur l'accès à sudo sur certaines commandes et donc de droits administrateurs
+* audio: accès au matériel son
+* video: accès aux périphériques de capture vidéo
+* optical: accès au lecteur optique (cd/dvd)
+* storage: accès aux périphériques amovibles (ex: clé/disque usb)
+* lp: accès à l'imprimante
+Il faut maintenant modifier le fichier /etc/sudoers qui contient des informations sur la commande sudo. On entre la commande visudo qui nous amène directement dans le fichier, il faut maintenant décommenter la ligne %wheel ALL=(ALL) ALL (recherchez avec /), les utilisateurs dans le groupe wheels peuvent maintenant utilisier toutes les commandes en renseignant sudo et en entrant le mot de passe.
+
+Il faut maintenant installer les paquets suivants:
+* efibootmgr
+* dosfstools
+* os-prober
+* mtools
+à l'aide de la commande pacman -S efibootmgr dosfstools os-prober mtools.
+Ensuite j'ai créé le répertoire /boot/EFI à l'aide de la commande mkdir et j'ai monté ma partition EFI System déjà existante dedans (c'est /dev/nvme0n1p2 dans mon cas) avec: mount /dev/nvme0n1p2 /boot/EFI.
+Maintenant il faut installer un nouveau grub pour ma nouvelle partition: grub-install --target=x86_64-efi --bootloader-id=grub_arch_sae --recheck. Si tout se déroule bien un message avec No error reported apparait.
+Pour générer la configuration du grub: grub-mkconfig -o /boot/grub/grub.cfg.
+
+Pour activer NetworkManager je peux dors et déjà faire la commande: systemctl enable NetworkManager.
+
+Maintenant je peux taper exit pour sortir du mode arch-chroot. Je peux aussi démonter ma partition /mnt avec la commande umount -l /mnt. Je peux enfin taper shutdown now pour éteindre mon ordinateur, puis j'enlève ma clé USB et ensuite je rallume la machine.
+Ma machine se lance et affiche le grub déjà présent sans l'option de boot sur le système Arch Linux que je viens d'installer, en effet le programme os-prober ne sait pas qu'il doit aller chercher ma partition est la donner au grub actuel. Pour cela il faut faire deux choses, après m'être connecté sur ma partition qui lance le grub, j'ajouter dans le fichier /boot/default/grub la ligne GRUB_DISABLE_OS_PROBER=false pour que le os-prober aille chercher les autres systèmes (j'ai déjà réalisé cette étape lors de mes précédentes installations). Ensuite il faut que j'actualise la configuration du grub avec: sudo grub-mkconfig -o /boot/brub/grub.cfg.
+En relançant mon ordinateur maintenant (reboot), j'obtiens le même grub mais avec l'option Arch Linux sur la partition /dev/nvme0n1p8, je la selectionne et peut me connecter sur mon compte utilisateur créé précédemment.
 
 # Schéma d'architecture logicielle
