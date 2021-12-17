@@ -113,13 +113,49 @@ gzip est l'outils fournit par le projet GNU, il est suffisemment simple d'utilis
 
 ### Gestionnaire de paquets
 
-* Installer un logiciel.
-* Désinstaller un logiciel.
-* Faire une recherche sur les paquets disponibles.
-* Faire une mise à jour.
-* Lister les fichiers installés par un paquet.
-* Rechercher quel paquet contient un fichier donné.
-  * Idem si le paquet n'est pas installé.
+#### Installer un logiciel
+
+```
+sudo pacman -S nom_du_paquet
+```
+
+#### Désinstaller un logiciel
+
+```
+sudo pacman -Rsn nom_du_paquet
+```
+
+#### Faire une recherche sur les paquets disponibles
+
+Recherche d'un paquet parmi ceux installés:
+
+```
+pacman -Qs nom_du_paquet
+```
+
+Recherche d'un paquet dans les dépôts:
+
+```
+pacman -Ss nom_du_paquet
+```
+
+#### Faire une mise à jour
+
+```
+sudo pacman -Syu
+```
+
+#### Lister les fichiers installés par un paquet
+
+```
+pacman -Ql paquet_1
+```
+
+#### Rechercher quel paquet contient un fichier donné
+
+```
+pacman -Qo /chemin/vers/le/fichier
+```
 
 ### Réseau
 
