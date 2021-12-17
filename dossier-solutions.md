@@ -159,29 +159,112 @@ pacman -Qo /chemin/vers/le/fichier
 
 ### Réseau
 
-* Pouvoir se connecter sur une autre machine avec `ssh`.
-* Permettre à une autre machine de se connecter sur la vôtre.
-* Installer un serveur web capable de lire vos pages perso (`userdir`).
+#### Permettre à une autre machine de se connecter sur la vôtre
+
+```
+pacman -S openssh
+```
+
+```
+vim /etc/ssh/sshd_config
+```
+
+Décommenter la ligne sur le port.
+
+```
+ip addr
+```
+
+Trouver adresse MAC.
+
+```
+systemctl enable sshd
+systemctl start sshd
+```
+
+Il faut maintenant configurer mon routeur, interface Freebox OS dans un navigateur > Paramètres de la Freebox > DHCP > Baux statiques > Ajouter un bail DHCP statique > Adresse MAC: adresse MAC de Arch > Adresse IP: choisir une adresse > Sauvegarder.
+
+Paramètres de la Freebox > Gestion des ports > Ajouter une redirection > IP Destination: IP choisi avant > IP source: Toutes > Port de début: choisir au-dessus de ce qui est indiqué > Port de destination: 22 > Sauvegarder.
+
+Création des clefs sur la machine client et ajout dans .ssh/ de la machine serveur.
+
+```
+ssh felix@adresse.ip.publique.freebox -p PORT_CHOISIT
+```
+
+#### Pouvoir se connecter sur une autre machine avec `ssh`
+
+Création des clefs sur la machine client et ajout dans .ssh/ de la machine serveur.
+
+```
+ssh login@adresse.ip
+```
+
+#### Installer un serveur web capable de lire vos pages perso (`userdir`).
+
+```
+pacman -S apache
+```
+
+```
+systemctl enable httpd
+systemctl start httpd
+```
+
+```
+vim /srv/http/index.html
+```
+
+Créer page html et vérifier avec localhost dans un navigateur.
 
 ### Sauvegardes
 
-* Faire une archive d'un répertoire (et de ses sous répertoires).
-* Copier l'archive sur une clé USB.
-* Copier l'archive via `scp` (vous pouvez vous entraîner sur `localhost`).
+#### Faire une archive d'un répertoire (et de ses sous répertoires).
 
-### Services (voir `systemd` ou autre selon OS)
+```
+tar -cvf nom_archive.tar nom_dossier/
+gzip nom_archive.tar
+```
 
-* Savoir démarrer/stopper un service.
-* Savoir en vérifier l'état.
-* Savoir afficher les messages d'erreur.
+#### Copier l'archive sur une clé USB.
+
+```
+mount /dev/nom_partition_clef /mnt
+cp /chemin/de/l/archive /mnt
+umount /dev/nom_partition_clef
+```
+
+#### Copier l'archive via `scp`
+
+Connexion ssh fonctionnelle requise.
+
+```
+scp /chemin/de/l/archive login@adresse.ip:/repertoire/destination
+```
+
+### Services
+
+#### Savoir démarrer/stopper un service
+
+```
+systemctl start service
+systemctl stop service
+```
+
+#### Savoir en vérifier l'état
+
+```
+systemctl status service
+```
+
+#### Savoir afficher les messages d'erreur.
+
+Les messages d'erreurs sont dans les fichiers de logs dans le répertoire /var/log/.
 
 ### Divers
 
-* Comment faire pour que le *stagiaire* n'ait pas accès aux données de votre compte ?
+#### Comment faire pour que le *stagiaire* n'ait pas accès aux données de votre compte ?
 
-### Bonus
-
-* Écrire un service utilisateur qui se lance dès la connexion de l'utilisateur.
-* Écrire un service qui se lance périodiquement.
-* Installer un logiciel propriétaire en restreignant ses droits d'accès à votre environnement.
-
+```
+chmod 700 /home/felix
+```
