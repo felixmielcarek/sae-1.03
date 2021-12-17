@@ -119,6 +119,9 @@ Je dois de nouveau changer le langage de mon clavier avec sudo cette fois. Pour 
 Pour me connecter à internet le commence par lister les réseaux disponibles avec nmcli device wifi list. Je peux me connecter ensuite avec la commande nmcli device wifi connect Freebox-89E501 password suivi du mot de passe de ma box. Avec ping google.com je vois que ma connection fonctionne.
 Je vais maintenant tester que mon serveur graphique xorg fonctionne correctement, je vais donc lancer l'environnement minimaliste. Pour cela je dois installer des paquets à l'aide de la commande suivante: pacman -S xorg-xinit xorg-twm xorg-xclock xterm. Je peux ensuite lancer la commande startx qui me lance interface graphique. En entrant exit dans le terminal à au à gauche je peux quitter startx.
 Maintenant qu'on sait que xorg fonctionne on va commencer par installer le gestionnaire d'affichage lightdm, celui-ci a besoin d'un interface utilisateur qui est le paquet lightdm-gtk-greeter. Je l'active avec systemctl enable lightdm.service.
-Maintenant j'installe i3 qui est un gestionnaire de fênetre, la commande sudo pacman -S i3 m'indique que 5 paquets sont présents, je ne peux pas tous les installer car i3-wm et i3-gaps génère un conflit, je choisis i3-wm qui est le paquet de base, je dois donc entrer 1 3 4 5 pour sélectionner les paquets. J'installe aussi le paquet kitty (qui est un terminal).
+Maintenant j'installe le groupe de paquet xfce4 qui est un environnement de bureau, je dois appuyer une deuxième fois sur Entrée pour installer tous les paquets du groupe, puis je reboot. J'arrive sur lightdm, je me connecte et arrive sur xfce.
+Il faut que je rechange mon clavier en AZERTY, pour cela Applications (en haut à gauche) > Settings > Keyboard > Layout, je décoche "Use system defaults", selectionne English et clique sur "Edit" puis selectionne le layout de clavier "French".
+Il faut maintenant installer un navigateur web, je lance un terminal (Ctrl+Alt+T) et j'installe le paquet firefox, selectionne le thème de font que je veux (1 dans mon cas).
+Mon système est maintenant opérationnel et permet une navigation web basique.
 
 # Schéma d'architecture logicielle
