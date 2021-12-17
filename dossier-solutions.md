@@ -35,17 +35,17 @@ Quand plusieurs choix était disponibles, j'ai aussi essayé de trouver des solu
 ### Résumé des choix
 
 | Besoin                                                                             | Nombre d'outils | Logiciels proposés                 |
-| ---------------------------------------------------------------------------------- | :--------------:| -----------------------------------|
+| ---------------------------------------------------------------------------------- | :--------------:| :---------------------------------:|
 | Avoir des Gestionnaires de bureau/fenêtre (dont un qui vous plaise)                | 4               | xfce - i3 - gnome - xorg-twm       |
 | Compiler un programme C                                                            | 2               | gcc - clang                        |
 | Regarder les pages de man de la libC                                               | 2               | man-db - glibc                     |
 | Lancer un `make`                                                                   |                 | base-devel                         |
-| Éditer du code source                                                              | 4               | vim - VScode - geany - Rider |
-| Déboguer du code                                                                   | 2               | gdb - LLDB                   |
+| Éditer du code source                                                              | 4               | vim - VScode - geany - Rider       |
+| Déboguer du code                                                                   | 2               | gdb - LLDB                         |
 | Naviguer sur le Web                                                                | 2               | Firefox - Opera                    |
-| Éditer une image matricielle (png...)                                              | 2               | Gimp - Krita                   |
-| Éditer une image vectorielle (svg)                                                 | 1               | Inkscape                   |
-| (Dé)Compresser les formats `targz` et `7z` et `rar`                                | 1               | gzip                   |
+| Éditer une image matricielle (png...)                                              | 2               | Gimp - Krita                       |
+| Éditer une image vectorielle (svg)                                                 | 1               | Inkscape                           |
+| (Dé)Compresser les formats `targz` et `7z` et `rar`                                | 1               | gzip                               |
 
 ## Explications détaillées des choix
 
