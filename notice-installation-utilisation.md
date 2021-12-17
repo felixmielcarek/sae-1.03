@@ -8,11 +8,11 @@ Notice: Installation - Utilisation
 
 ### Le matériel disponible
 
-La machine sur laquelle j'ai réalisé l'installation est un ordinateur portable possédant un système ```Windows 11``` et un sytème ```Linux Ubuntu```, le disque n'est pas plein puisque qu'il reste de l'espace qui n'est pas utilisé.
+La machine sur laquelle j'ai réalisé l'installation est un ordinateur portable possédant un système ```Windows 11``` et un sytème ```Linux Ubuntu```, le disque n'est pas plein puisqu'il reste de l'espace qui n'est pas utilisé.
 
 ### Création d'une clé de boot
 
-Avant de commencer l'installation j'ai du créer une clé de boot qui servira à l'initier.
+Avant de commencer l'installation j'ai dû créer une clé de boot qui servira à l'initier.
 
 Sur Windows j'ai téléchargé une image du système d'exploitation (fichier ```.iso```) que j'ai trouvé sur le **[site français de Arch Linux](http://mir.archlinux.fr/iso/latest/)**, elle porte le nom ```archlinux-2021.12.01-x86_64.iso```.
 
@@ -27,10 +27,6 @@ Une fois le statut affichant prêt, j'ai relancé mon ordinateur et suis tombé 
 En effet dans mon ```UEFI``` j'avais lors de mon installation Ubuntu en dual boot déjà désactivé le ```Secure Boot``` et le ```Fast Boot```, j'avais aussi mis en premier périphérique à boot mon entrée USB et en deuxième périphérique mon grub installé sur mon disque dur (qui se lance par défaut quand il n'y a pas de clé de boot inséré).
 
 ## Installation du système d'exploitation
-
-
-!!!!!!!!!!!!!!!!!!!DETAILLER TOUT LES -options !!!!!!!!!!!!!!!!!!!
-
 
 Dans le menu d'installation de Arch Linux, je sélectionne l'option ```Arch Linux install medium (x86_64, UEFI)```. Ensuite j'obtiens un terminal ```archiso``` où je suis connecté en ```root```. 
 
@@ -327,12 +323,6 @@ Entrer la commande:
 ```
 pacman -S efibootmgr dosfstools os-prober mtools
 ```
-
-J'ai installé les paquets suivants !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!:
-* ```efibootmgr```
-* ```dosfstools```
-* ```os-prober```
-* ```mtools```
 
 #### Création du répertoire de boot
 
