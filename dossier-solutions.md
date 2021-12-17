@@ -6,31 +6,31 @@ Dossier: Etude et choix des solutions
 
 ## Choix du système d'exploitation
 
-La première étape de la SAE était de choisir un OS de type Unix Libre. 
+La première étape de la SAE était de choisir un OS du type Unix Libre. 
 
 ### GNU/Linux ou BSD
 
-Le premier choix à faire était installer un OS de type GNU/Linux ou BSD. En me renseignant j'ai pris connaissance des différences et points communs qu'ils avaient. Cependant j'ai compris que pour l'utilisation à laquelle était destiné le système et pour le niveau que j'avais, choisir entre un de ses deux types d'OS ne changerait pas grand chose. Je me suis donc naturellement tourné vers un système GNU/Linux car je n'ai jamais utilisé de système BSD et je serais donc plus à l'aise et efficace sur ce que je connais (je prévois personnellement d'essayer FreeBSD par exemple dans le futur).
+Le premier choix à faire était installer un OS du type GNU/Linux ou BSD. En me renseignant j'ai pris connaissance des différences et points communs qu'ils avaient. Cependant j'ai compris que pour l'utilisation à laquelle était destiné le système et pour le niveau que j'avais, choisir entre un de ces deux types d'OS ne changerait pas grand-chose. Je me suis donc naturellement tourné vers un système GNU/Linux car je n'ai jamais utilisé de système BSD et je serais donc plus à l'aise et efficace sur ce que je connais (je prévois personnellement d'essayer FreeBSD par exemple dans le futur).
 
 ### Choisir sa distribution
 
-Ma courte expérience (1 an et demi) sur des systèmes UNIX m'avait seulement permis de tester des distributions Debian et Ubuntu. Leur installation étant grandement accompagnée je n'ai pas été séduit par le fait d'en faire un guide se résumant à cliquer sur suivant. 
+Ma courte expérience (1 an et demi) sur des systèmes UNIX m'avait seulement permis de tester des distributions Debian et Ubuntu. Leur installation étant grandement accompagnée je n'ai pas été séduit par le fait d'en faire un guide se résumant à cliquer sur ```Suivant```. 
 
 En me renseignant rapidement sur les différents autres systèmes d'exploitation, l'installation d'un système Arch Linux m'a paru très intéressante. En l'installant j'ai vraiment mieux compris comment fonctionnait un système (ce que j'adore dans l'informatique), et j'ai appris énormément de choses. 
 
-Après avoir réussi à l'installer et l'avoir tester, j'ai aussi adoré l'utiliser pour plusieurs raisons qui rentrait parfaitement dans l'objectif de la SAE (à savoir un poste pour le dévellopement): d'abord par sa stabilité, je n'ai jamais eu aucun soucis avec mon système (autre que venant de moi, dans les configurations par exemple). Ensuite sa rapidité, que se soit dans l'execution de tâches (bien qu'elles ne soient pas forcément lourdes) ou juste au démarrage du sytème, j'ai vraiment senti la différence par rapport à Ubuntu. Et enfin la taille du système ma grandement séduit aussi, mon système Arch Linux était presque 5 fois mois lourd que mon Ubuntu.
+Après avoir réussi à l'installer et l'avoir testé, j'ai aussi adoré l'utiliser pour plusieurs raisons qui rentraient parfaitement dans l'objectif de la SAE (à savoir un poste pour le développement): d'abord par sa stabilité, je n'ai jamais eu aucun souci avec mon système (autre que venant de moi, dans les configurations par exemple). Ensuite sa rapidité, que ce soit dans l'exécution de tâches (bien qu'elles ne soient pas forcément lourdes) ou juste au démarrage du système, j'ai vraiment senti la différence par rapport à Ubuntu. Et enfin la taille du système m'a grandement séduite aussi, mon système Arch Linux était presque 5 fois moins lourd que mon Ubuntu.
 
-J'ai donc choisit pour toutes ses raisons d'utiliser Arch Linux.
+J'ai donc choisi pour toutes ses raisons d'utiliser Arch Linux.
 
 ## Choix des solutions
 
 ### Les critères
 
-Pour choisir les solutions, j'ai utilisé plusieurs critères dû au sujet. Dans tous les cas j'ai essayé de trouver des solutions libres et open-source car j'adhère aux principes qu'ils véhiculent. 
+Pour choisir les solutions, j'ai utilisé plusieurs critères dus au sujet. Dans tous les cas j'ai essayé de trouver des solutions libres et open source car j'adhère aux principes qu'ils véhiculent. 
 
 Comme le poste est destiné au développement il y avait aussi des contraintes d'efficacité, de rapidité, et de praticité.
 
-Quand plusieurs choix était disponibles, j'ai aussi essayé de trouver des solutions plus confortables à utiliser quitte à perdre en performances. Le but d'avoir différentes solutions et aussi selon moi qu'elles répondent le plus différemment possible au même besoin pour pouvoir varier à volonté.
+Quand plusieurs choix étaient disponibles, j'ai aussi essayé de trouver des solutions plus confortables à utiliser quitte à perdre en performances. Le but d'avoir différentes solutions et aussi selon moi qu'elles répondent le plus différemment possible au même besoin pour pouvoir varier à volonté.
 
 ### Résumé des choix
 
@@ -51,23 +51,23 @@ Quand plusieurs choix était disponibles, j'ai aussi essayé de trouver des solu
 
 ### Choix des gestionnaires de bureau/fenêtre
 
-J'ai d'abord choisit xfce comme premier gestionnaire de bureau/fenêtre car c'est il est très moyen/basique partout, il satisfait donc en théorie le plus grand nombre. De plus Linus Torvalds lui-même a conseillé d'utiliser xfce lors de la sortie de Gnome 3 (je suis facilement influençable).
+J'ai d'abord choisi xfce comme premier gestionnaire de bureau/fenêtre car s'est-il est très moyen/basique partout, il satisfait donc en théorie le plus grand nombre. De plus Linus Torvalds lui-même a conseillé d'utiliser xfce lors de la sortie de Gnome 3 (je suis facilement influençable).
 
-En deuxième choix j'ai choisit i3 (i3-gaps pour être précis) car c'est le gestionnaire de fenêtre que je préfère par-dessus tout, il est très rapide et configurable à souhait, il faut juste un petit peu de pratique pour l'utiliser efficacement dû aux raccourcis claviers inhabituels. J'ai préféré i3-gaps à i3-wm car je trouve que l'espacement des fenêtre est très joli et rend l'écran plus lisibles à mon goût.
+En deuxième choix j'ai choisi i3 (i3-gaps pour être précis) car c'est le gestionnaire de fenêtres que je préfère par-dessus tout, il est très rapide et configurable à souhait, il faut juste un petit peu de pratique pour l'utiliser efficacement dû aux raccourcis claviers inhabituels. J'ai préféré i3-gaps à i3-wm car je trouve que l'espacement des fenêtres est très joli et rend l'écran plus lisible à mon goût.
 
-Mon troisième choix a porté sur gnome, je n'apprécie pas du tout ce gestionnaire à cause de sa lenteur et sa lourdeur dû au nombreux paquets qu'il installe par default. Cependant je dois reconnaître à gnome qu'il est confortable visuellement et qu'il est apprécié par de nombreux utilisateurs, c'est ce qui a motivé mon choix.
+Mon troisième choix a porté sur gnome, je n'apprécie pas du tout ce gestionnaire à cause de sa lenteur et sa lourdeur due aux nombreux paquets qu'il installe par défaut. Cependant je dois reconnaître à gnome qu'il est confortable visuellement et qu'il est apprécié par de nombreux utilisateurs, c'est ce qui a motivé mon choix.
 
-Finalement mon dernier choix est celui de xorg-twm, j'ai installé ce gestionnaire pour tester l'opérabilité de mon serveur d'affichage X (avec la commande startx). Bien qu'il soit horrible inutilisable au quotidien (selon-moi), ça reste un gestionnaire de fenêtre fonctionnel et très pratique lors de l'installation.
+Finalement mon dernier choix est celui de xorg-twm, j'ai installé ce gestionnaire pour tester l'opérabilité de mon serveur d'affichage X (avec la commande startx). Bien qu'il soit horrible inutilisable au quotidien (selon moi), ça reste un gestionnaire de fenêtres fonctionnel et très pratique lors de l'installation.
 
 ### Choix des compilateurs C
 
-Le premier compilateur C que j'ai choisit est logiquement gcc. Logiquement car le noyau Linux dépend étroitement des fonctionnalités de gcc, c'est aussi le compilateur avec lequel je suis le plus à l'aise puisque je l'utilise depuis plus d'un an.
+Le premier compilateur C que j'ai choisi est logiquement gcc. Logiquement car le noyau Linux dépend étroitement des fonctionnalités de gcc, c'est aussi le compilateur avec lequel je suis le plus à l'aise puisque je l'utilise depuis plus d'un an.
 
-Une alternative à gcc que je ne connaissais pas est Clang. De mes recherches j'ai compris que sa manière de compiler du code est différente de gcc et à pour objectif de garder un maximum les informations du code original (contrairement à gcc). Cela permet d'avoir des rapports d'erreurs plus détaillés ce qui facilite la traçabilité d'un problème. Pour ces raisons, cette solution semble intéressente pour certains projets de développement.
+Une alternative à gcc que je ne connaissais pas est Clang. De mes recherches j'ai compris que sa manière de compiler du code est différente de gcc et à pour objectif de garder un maximum les informations du code original (contrairement à gcc). Cela permet d'avoir des rapports d'erreurs plus détaillés ce qui facilite la traçabilité d'un problème. Pour ces raisons, cette solution semble intéressante pour certains projets de développement.
 
 ### Regarder les pages de man de la libC
 
-Le premier outil est man-db qui permet d'utiliser la commande man 3 suivit du manuel que l'on souhaite consulter. Cette outils est très pratique pour consulter des pages de manuel directement dans son terminal. L'option 3 est pour les manuels concernant le langage C. Le désavantage à cet outils est la traduction des pages qui est parfois maladroite.
+Le premier outil est man-db qui permet d'utiliser la commande man 3 suivit du manuel que l'on souhaite consulter. Cet outil est très pratique pour consulter des pages de manuel directement dans son terminal. L'option 3 est pour les manuels concernant le langage C. Le désavantage à cet outil est la traduction des pages qui est parfois maladroite.
 
 Le deuxième outil est glibc. C'est une library qui contient les fonctionnalités du système GNU/Linux. Il est bien moins pratique à consulter puisque je n'ai pas trouvé de commande pour consulter les manuels, cependant une recherche internet nous procure rapidement une solution.
 
@@ -77,37 +77,37 @@ La commande make est disponible dans le paquet base-devel.
 
 ### Editer du code source
 
-Mon premier choix porte sur vim. Bien que certaines personnes le critique pour sa prise en main rebutante, je trouve que cette outils est avec un peu de pratique très performant et procure un gain de temps incroyable. Il est très rapide dans son fonctionnement, très léger et avec quelques plugins bien choisit, n'a rien à envier aux IDE les plus populaires.
+Mon premier choix porte sur vim. Bien que certaines personnes le critique pour sa prise en main rebutante, je trouve que cet outil est avec un peu de pratique très performant et procure un gain de temps incroyable. Il est très rapide dans son fonctionnement, très léger et avec quelques plugins bien choisis, n'a rien à envier aux IDE les plus populaires.
 
-Mon deuxième choix est Visual Studio Code, cette IDE est plus joli que vim et possède beaucoup de fonctionnalités intégrées ou faciles à intégrées. Cela ajoute forcément du poids au logiciel cependant.
+Mon deuxième choix est Visual Studio Code, cette IDE est plus joli que vim et possède beaucoup de fonctionnalités intégrées ou faciles à intégrer. Cela ajoute forcément du poids au logiciel cependant.
 
-Geany est un IDE que je n'ai presque jamais utilisé mais que je trouve très pratique. Il est assez basique, l'interface est claire est fonctionnel même si je ne la trouve pas très jolie.
+Geany est un IDE que je n'ai presque jamais utilisée mais que je trouve très pratique. Il est assez basique, l'interface est claire est fonctionnelle même si je ne la trouve pas très jolie.
 
-Enfin, le dernier outils que j'ai choisi est Rider. Bien que je ne l'ai pas encore testé cette IDE semble particulièrement efficace pour dévelloper en C#, contrairement à Visual Studio que je trouve horriblement lent.
+Enfin, le dernier outil que j'ai choisi est Rider. Bien que je ne l'ai pas encore testé cet IDE semble particulièrement efficace pour développer en C#, contrairement à Visual Studio que je trouve horriblement lent.
 
 ### Déboguer du code
 
-Pour choisir deux débogueur, j'ai tout simplement choisit ceux correspondant aux projets possédant les compilateurs que j'avais installé. Pour le projet GNU c'est donc gdb qui correspond et pour LLVM c'est LLDB.
+Pour choisir deux débogueurs, j'ai tout simplement choisi ceux correspondant aux projets possédants les compilateurs que j'avais installés. Pour le projet GNU c'est donc gdb qui correspond et pour LLVM c'est LLDB.
 
 ### Naviguer sur le Web
 
-Le premier navigateur internet que j'ai installé est Firefox, je le trouve très pratique à utiliser et possède toutes les fonctionnalités qu'on attends de lui. De plus Firefox a (plus ou moins) une éthique de protection des données ce qui n'est pas négligeable.
+Le premier navigateur internet que j'ai installé est Firefox, je le trouve très pratique à utiliser et possède toutes les fonctionnalités qu'on attend de lui. De plus Firefox a (plus ou moins) une éthique de protection des données ce qui n'est pas négligeable.
 
-Le deuxième navigateur que j'ai choisi est Opera. J'ai longtemps utilisé Opera par le passé pour ses nombreuses petites fonctionnalités intérressante, notemment dans l'intégration d'applications. J'ai cessé de l'utiliser pour sa lourdeur et sa lenteur mais je sais qu'il séduit un grand nombre de personne.
+Le deuxième navigateur que j'ai choisi est Opera. J'ai longtemps utilisé Opera par le passé pour ses nombreuses petites fonctionnalités intérressantes, notemment dans l'intégration d'applications. J'ai cessé de l'utiliser pour sa lourdeur et sa lenteur mais je sais qu'il séduit un grand nombre de personnes.
 
 ### Editer une image matricielle
 
-Gimp est assurément la meilleure alternative libre aux licences payantes (comme Adobe), son interface c'est grandement amélioré et de nombreuses fonctionnalités interressantes sont disponibles (comme la possibilité d'exporter une image comme du code C par exemple).
+Gimp est assurément la meilleure alternative libre aux licences payantes (comme Adobe), son interface c'est grandement amélioré et de nombreuses fonctionnalités intéressantes sont disponibles (comme la possibilité d'exporter une image comme du code C par exemple).
 
-Krita est un logiciel très utile et fonctionnel pour les dessinateurs spécialement, notemment grâce à une bonne intégration de l'usage de la tablette graphique. Des connaissances à moi travaillant dans le domaine de l'art utilise et apprécie cet outils.
+Krita est un logiciel très utile et fonctionnel pour les dessinateurs spécialement, notamment grâce à une bonne intégration de l'usage de la tablette graphique. Des connaissances à moi travaillant dans le domaine de l'art utilisent et apprécient cet outil.
 
 ### Editer une image vectorielle
 
-Je ne connaissais pas l'existence des images vectorielles avant le début de cette SAE et me suis donc renseigné sur son fonctionnement basique et sur les logiciels permettants d'en éditer. Adobe Illustrator semble être le meilleur logiciel dans le domaine mais est sous licence payante, cependant Inkscape présente (presque) les mêmes fonctionnalités et est libre. J'ai donc essayé ce logiciel pour réaliser le schéma de l'architecture logicielle et ai remarqué qu'il remplissait effectivement parfaitement son rôle. Dû au fait que je ne l'ai utilisé qu'un fois, je n'ai pas trouvé la prise en main très facile et l'interface n'était pas très belle selon moi cependant.
+Je ne connaissais pas l'existence des images vectorielles avant le début de cette SAE et me suis donc renseigné sur son fonctionnement basique et sur les logiciels permettant d'en éditer. Adobe Illustrator semble être le meilleur logiciel dans le domaine mais est sous licence payante, cependant Inkscape présente (presque) les mêmes fonctionnalités et est libre. J'ai donc essayé ce logiciel pour réaliser le schéma de l'architecture logicielle et ai remarqué qu'il remplissait effectivement parfaitement son rôle. Dû au fait que je ne l'ai utilisé qu'une fois, je n'ai pas trouvé la prise en main très facile et l'interface n'était pas très belle selon moi cependant.
 
 ### (Dé)Compresser les formats targz et 7z et rar
 
-gzip est l'outils fournit par le projet GNU, il est suffisemment simple d'utilisation en ligne de commande. Je n'ai pas voulu installer de logiciel graphique car je considère qu'ils sont une perte de temps considérable pour ce genre de petites manipulations. Le confort gagné n'aurait été que minime selon moi.
+gzip est l'outil fourni par le projet GNU, il est suffisamment simple d'utilisation en ligne de commande. Je n'ai pas voulu installer de logiciel graphique car je considère qu'ils sont une perte de temps considérable pour ce genre de petites manipulations. Le confort gagné n'aurait été que minime selon moi.
 
 ## Points indispensables à maîtriser
 
@@ -200,7 +200,7 @@ Création des clefs sur la machine client et ajout dans .ssh/ de la machine serv
 ssh login@adresse.ip
 ```
 
-#### Installer un serveur web capable de lire vos pages perso (`userdir`).
+#### Installer un serveur web capable de lire vos pages perso (`userdir`)
 
 ```
 pacman -S apache
@@ -219,14 +219,14 @@ Créer page html et vérifier avec localhost dans un navigateur.
 
 ### Sauvegardes
 
-#### Faire une archive d'un répertoire (et de ses sous répertoires).
+#### Faire une archive d'un répertoire (et de ses sous répertoires)
 
 ```
 tar -cvf nom_archive.tar nom_dossier/
 gzip nom_archive.tar
 ```
 
-#### Copier l'archive sur une clé USB.
+#### Copier l'archive sur une clé USB
 
 ```
 mount /dev/nom_partition_clef /mnt
@@ -257,7 +257,7 @@ systemctl stop service
 systemctl status service
 ```
 
-#### Savoir afficher les messages d'erreur.
+#### Savoir afficher les messages d'erreur
 
 Les messages d'erreurs sont dans les fichiers de logs dans le répertoire /var/log/.
 
