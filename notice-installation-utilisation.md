@@ -258,7 +258,7 @@ Dans ce fichier il faut écrire les lignes suivantes:
 127.0.1.1   fm-arch-sae
 ```
 
-Ce fichier permet au système d'associer des noms d'hôtes à des adresses IP lors de l'accès à un réseau. !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Ce fichier permet au système d'associer des noms d'hôtes à des adresses IP lors de l'accès à un réseau.
 
 ### Configurer les utilisateurs
 
