@@ -388,12 +388,12 @@ Ma machine se lance et affiche le ```grub``` déjà présent sans l'option de bo
 
 #### Activer la partition
 
-Pour cela il faut faire deux choses, après m'être connecté sur ma partition qui lance le ```grub```, j'ajouter dans le fichier ```/boot/default/grub``` la ligne ```GRUB_DISABLE_OS_PROBER=false``` pour que le ```os-prober``` aille chercher les autres systèmes (j'ai déjà réalisé cette étape lors de mes précédentes installations). 
+Pour cela il faut faire deux choses, après m'être connecté sur ma partition qui lance le ```grub```, j'ajoute dans le fichier ```/etc/default/grub``` la ligne ```GRUB_DISABLE_OS_PROBER=false``` pour que le ```os-prober``` aille chercher les autres systèmes (j'ai déjà réalisé cette étape lors de mes précédentes installations). 
 
 Ensuite il faut que j'actualise la configuration du grub avec:
 
 ```
-sudo grub-mkconfig -o /boot/brub/grub.cfg
+sudo grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
 En relançant mon ordinateur maintenant (```reboot```), j'obtiens le même ```grub``` mais avec l'option Arch Linux sur la partition ```/dev/nvme0n1p8```, je la selectionne et peut me connecter sur mon compte utilisateur créé précédemment.
